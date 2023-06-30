@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("aa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  header {
+    background-color:transparent;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    margin-right: 10px;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  .profile-image img {
+    width: 75px;
+    height: 75px;
+    border-radius: 65%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #C4A484;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+  }
+  
+  .image-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-box img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  
+  .description {
+    flex-grow: 1;
+  }
+  
+  .description h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  
+  footer {
+    background-color: transparent;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .section-two .image-section {
+    position: relative;
+    display: inline-block;
+    padding: 30px;
+  }
+  
+  .section-two .image-section img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .section-two .image-section:hover img {
+    transform: scale(1.1);
+  }
+  
+  .section-two .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+  }
+  
+  .section-two .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .section-two .image-section:hover .overlay {
+    opacity: 1;
+  }
+  
+  .section-two .image-section:hover .overlay-content {
+    opacity: 1;
+  }
+  
+  .section-one {
+    text-align: left;
+  }
+  
+  .section-one img {
+    display: inline-block;
+    margin-left: 300px;
+  }
+  
+  .section-three {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section-three .image-wrapper {
+    width: calc(33.33% - 50px);
+    margin: 25px;
+    padding: 25px;
+    background-color: #e28888;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .section-three .image-wrapper img {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+  }
+  span{
+    color:#000000;
+  }
+  .about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    font-style: italic;
+  
+  }
+  .description{
+    font-size: 35px;
+    text-align: left;
+  }
+  .heading{
+    text-align: left;
+    line-height: 1.2;
+  }
+  
+  .hobbies-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hobby-column {
+    flex: 0 0 20%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .icon-box {
+    text-align: center;
+  }
+  
+  .icon-box i {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .icon-box h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .icon-box p {
+    font-size: 14px;
+  }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="profile-image">
+      <a href="#" class="profile-image">Aparna</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main><center>
+    <h2>Welcome To my personal website!!!</h2></center>
+    <section class="section-one">
+      <div class="image-section">
+        <img src="MyProfile.jpg" alt="profile1" style="align-items: center;" >
+      </div>
+      <div class="description-section">
+    </section>
+  </main>
+  <p>
+    <br><br><br><br><br><br>
+  </p>
+
+<footer>
+  <p>© 2023 My Personal Website. All rights reserved.</p>
+  <p>Page Visits: <span id="page-visits"></span></p>
+  <p id="server-time"></p>
+</footer>
+<script>
+  setInterval(updateServerTime, 1000); // Update time every second
+
+  // Page visit counter
+  if (localStorage.getItem('pageVisits')) {
+  var count = parseInt(localStorage.getItem('pageVisits'));
+  count++;
+  localStorage.setItem('pageVisits', count);
+} else {
+  localStorage.setItem('pageVisits', 1);
+}
+document.getElementById('page-visits').textContent = localStorage.getItem('pageVisits');
+
+
+  // Server time display
+  function updateServerTime() {
+    var serverTime = new Date();
+    var timeString = serverTime.toLocaleTimeString();
+    document.getElementById("server-time").textContent = "Server Time: " + timeString;
+  }
+</script>
+</body>
+</html>
